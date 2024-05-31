@@ -1,18 +1,18 @@
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ffebcd;
+    background-color: #f7f9fc;
     margin: 0;
 }
 
 .container {
-    background: #fff8dc;
+    background: white;
     padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 400px;
     width: 100%;
@@ -21,7 +21,7 @@ body {
 h1 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #ff69b4;
+    color: #333;
 }
 
 form {
@@ -32,14 +32,15 @@ form {
 
 label {
     margin: 10px 0;
-    font-size: 1.1em;
+    font-size: 1em;
+    color: #555;
 }
 
 input[type="number"] {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 2px solid #ff69b4;
+    border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
 }
@@ -52,17 +53,17 @@ input[type="checkbox"] {
 button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #ff69b4;
+    background-color: #007BFF;
     color: white;
     border: none;
-    border-radius: 10px;
-    font-size: 1.2em;
+    border-radius: 5px;
+    font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #ff1493;
+    background-color: #0056b3;
 }
 
 #result {
@@ -71,6 +72,7 @@ button:hover {
 
 #password {
     font-weight: bold;
-    font-size: 1.5em;
-    color: #ff4500;
+    font-size: 1.2em;
+    color: #007BFF;
+    word-break: break-all;
 }
