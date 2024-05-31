@@ -2,13 +2,14 @@ function generatePassword() {
     const length = document.getElementById('length').value;
     const includeUppercase = document.getElementById('uppercase').checked;
     const includeSymbols = document.getElementById('symbols').checked;
+    const includeNumbers = document.getElementById('numbers').checked;
 
     const lowercase = 'abcdefghijklmnopqrstuvwxyz';
     const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const numbers = '0123456789';
     const symbols = '!@#$%&*()/';
 
-    let characters = lowercase + numbers;
+    let characters = lowercase;
     let mandatoryCharacters = '';
 
     if (includeUppercase) {
@@ -19,6 +20,11 @@ function generatePassword() {
     if (includeSymbols) {
         characters += symbols;
         mandatoryCharacters += symbols[Math.floor(Math.random() * symbols.length)];
+    }
+
+    if (includeNumbers) {
+        characters += numbers;
+        mandatoryCharacters += numbers[Math.floor(Math.random() * numbers.length)];
     }
 
     let password = '';
